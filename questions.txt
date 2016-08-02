@@ -1,0 +1,21 @@
+0.  8bit BMP and GIF (256 colors). 24bit BMP, JPEG, and PNG (16.8 million colors). 
+1.  .gif format will support animation
+2.  Loseless will reconstruct the original image perfectly but will be larger in size. Lossy degrades the image slightly to save 
+    space.
+3.  JPEG is lossy compressed.
+4.  When a file is deleted on FAT, the system will modify the file to signal it is deleted and space can be recycled. The file cluster
+    is then moved to "free cluster", but nothing is done to the cluster itself.
+5.  To make sure files cannot be recovered, have a tool write 0's or a random value in every block of the hard drive.
+6.  Header file for C that has fixed width ints to allow for specific bit lengths.
+7.  uint8_t, uint32_t, int32_t, and uint16_t in a program will set aside a certain amount of memory for an int.
+8.  For bytes, "BYTE" is 8, "WORD" is 32, "LONG" is 32, and "WORD" is 16.
+9.  BM
+10. bfSize is the size (in bytes) of the bitmap and biSize is is the number of bytes required.
+11. If biHeight negative, the origin is in the top left corner and the bitmap is a top-down. 
+12. biBitCount
+13. If the file doesn't exist or cannot be written to, it may return "NULL".
+14. It always reads "1" because we are reading the files one struct at a time.
+15. If bi.biWidth is 3, padding is 3.
+16. fseek sets your position in the file forward by the offset you specify (beginning/current position/end of file)
+17. SEEK_CUR is your current position in the file.
+18. Not sure? Definitely not David. I got the image to show up though.
